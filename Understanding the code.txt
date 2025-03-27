@@ -1,0 +1,46 @@
+Responsive web design
+
+This Notepad will cover: 
+1. Viewports
+2. Media Queries 
+3. Flexible design layouts 
+4. Responsive images 
+5. Accessibility 
+6. The task at hand (more notes on the task specifically will be done in another note) 
+
+1. Viewports 
+	What are there and why are they important? 
+		Viewports are the screen sizes that the web page is being displayed on 
+		This means that all laptops, phone, tablets etc. are all different viewports 
+		And a good website will be able to accommodate to all the different sizes accordingly 
+		This is what is meant by responsive design 
+
+What are the different ways to describe a viewports size in css? 
+	Overall there are two units of measurement when it comes to describe the size of a viewport: relative and absolute units of measure 
+	Absolute units are like cm or px 
+	Relative units are based on the size of the viewport and resolution or the root elements font size 
+		Relative/responsive units of measure include: 
+			em : based on the font size of the parent element 
+			rem: based on the font size of the root element 
+			vw;vh : based on the viewports height or width 
+			%: percentage of the parent element 
+	the parent element: parent element are all the elements nestled inside the <html> 
+	the root element: <html>. like. that's it. 
+
+
+	
+2. Media Queries 
+	What are media queries and why are they important? 
+		Media queries allow us to run a series of tests and selectively apply CSS to certain sections of a web page according to users' needs 
+	
+	What are the different media types?
+	There are four (4) media types overall: 
+		All : The default type, which matches to all devices 
+		Print : used with printers 
+		Screen : fits devices with a screen 
+		Speech : fits devices with a text-to-speech function 
+	The four (4) media types are applied using the 'media' query --> @media{}. This allows the web page to respond to different device viewports
+	and automatically adjust the web page according to the viewport dimensions. 
+
+3. Flexible design layouts: Grids 
+	flexible design ensures that the web page layout remains consistent despite the changes in the overall width of the screen/browser window 

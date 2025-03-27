@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Periodic Table</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #c1bcc9;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(18, 1fr);
+            gap: 3px;
+            max-width: 100vw;
+            padding: 20px;
+        }
+        .element {
+            background: white;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 5px;
+            min-width: 30px;
+        }
+        @media (min-width: 768px) {
+            .container {
+                grid-template-columns: repeat(9, 1fr);
+            }
+            .element {
+                font-size: 10px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="element" style="grid-column: 1 / span 1;">H</div>
+        <div class="element" style="grid-column: 18 / span 1;">He</div>
+        <div class="element" style="grid-column: 1 / span 1; margin-top: 40px;">Li</div>
+        <div class="element">Be</div>
+        <div style="grid-column: 3 / span 10;"></div>
+        <div class="element">B</div>
+        <div class="element">C</div>
+        <div class="element">N</div>
+        <div class="element">O</div>
+        <div class="element">F</div>
+        <div class="element">Ne</div>
+
+        <div class="element">Na</div>
+        <div class="element">Mg</div>
+        <div class="element">Al</div>
+        <div class="element">Si</div>
+        <div class="element">P</div>
+        <div class="element">S</div>
+        <div class="element">Cl</div>
+        <div class="element">Ar</div>
+
+        <div class="element">K</div>
+        <div class="element">Ca</div>
+        <div class="element">Sc</div>
+        <div class="element">Ti</div>
+        <div class="element">V</div>
+        <div class="element">Cr</div>
+        <div class="element">Mn</div>
+        <div class="element">Fe</div>
+        <div class="element">Co</div>
+        <div class="element">Ni</div>
+        <div class="element">Cu</div>
+        <div class="element">Zn</div>
+        <div class="element">Ga</div>
+        <div class="element">Ge</div>
+        <div class="element">As</div>
+        <div class="element">Se</div>
+        <div class="element">Br</div>
+        <div class="element">Kr</div>
+
+        <div class="element">Rb</div>
+        <div class="element">Sr</div>
+        <div class="element">Y</div>
+        <div class="element">Zr</div>
+        <div class="element">Nb</div>
+        <div class="element">Mo</div>
+        <div class="element">Tc</div>
+        <div class="element">Ru</div>
+        <div class="element">Rh</div>
+        <div class="element">Pd</div>
+        <div class="element">Ag</div>
+        <div class="element">Cd</div>
+        <div class="element">In</div>
+        <div class="element">Sn</div>
+        <div class="element">Sb</div>
+        <div class="element">Te</div>
+        <div class="element">I</div>
+        <div class="element">Xe</div>
+        
+        <div class="element">Cs</div>
+        <div class="element">Ba</div>
+        <div class="element">La</div>
+        <div class="element">Ce</div>
+        <div class="element">Pr</div>
+        <div class="element">Nd</div>
+        <div class="element">Pm</div>
+        <div class="element">Sm</div>
+        <div class="element">Eu</div>
+        <div class="element">Gd</div>
+        <div class="element">Tb</div>
+        <div class="element">Dy</div>
+        <div class="element">Ho</div>
+        <div class="element">Er</div>
+        <div class="element">Tm</div>
+        <div class="element">Yb</div>
+        <div class="element">Lu</div>
+        <div class="element">Hf</div>
+        <div class="element">Ta</div>
+        <div class="element">W</div>
+        <div class="element">Re</div>
+        <div class="element">Os</div>
+        <div class="element">Ir</div>
+        <div class="element">Pt</div>
+        <div class="element">Au</div>
+        <div class="element">Hg</div>
+        <div class="element">Tl</div>
+        <div class="element">Pb</div>
+        <div class="element">Bi</div>
+        <div class="element">Po</div>
+        <div class="element">At</div>
+        <div class="element">Rn</div>
+        
+        <div class="element">Fr</div>
+        <div class="element">Ra</div>
+        <div class="element">Ac</div>
+        <div class="element">Th</div>
+        <div class="element">Pa</div>
+        <div class="element">U</div>
+        <div class="element">Np</div>
+        <div class="element">Pu</div>
+        <div class="element">Am</div>
+        <div class="element">Cm</div>
+        <div class="element">Bk</div>
+        <div class="element">Cf</div>
+        <div class="element">Es</div>
+        <div class="element">Fm</div>
+        <div class="element">Md</div>
+        <div class="element">No</div>
+        <div class="element">Lr</div>
+        <div class="element">Rf</div>
+        <div class="element">Db</div>
+        <div class="element">Sg</div>
+        <div class="element">Bh</div>
+        <div class="element">Hs</div>
+        <div class="element">Mt</div>
+        <div class="element">Ds</div>
+        <div class="element">Rg</div>
+        <div class="element">Cn</div>
+        <div class="element">Nh</div>
+        <div class="element">Fl</div>
+        <div class="element">Mc</div>
+        <div class="element">Lv</div>
+        <div class="element">Ts</div>
+        <div class="element">Og</div>
+    </div>
+</body>
+</html>
