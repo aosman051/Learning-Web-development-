@@ -1,0 +1,12 @@
+Understanding the code 
+
+1. Having an order to the font-family: this means that the browser will try and find and use the 'Courier new' font type. If it can't find that it will try and find 'Courier' If it still can't find that it will use any monospace font available to it 
+
+2. 'Display; flex' this means the grid type of the body is a flexbox. a FLEXBOX is a kind of container that will align all it's items in a way that will shift and change according to the viewport's dimensions, making it a more responsive web design choice 
+
+3. 'justify-content: centre' this will centre all the flex-grid items along the central axis of the container 
+
+Why combine both?
+Flexbox on the body: Ensures the entire periodic table is centered on the page, no matter the size of the screen.
+
+Grid on the container: Enables a well-structured, two-dimensional layout for the periodic table, where each element is properly aligned in columns and rows.
